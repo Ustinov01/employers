@@ -26,12 +26,12 @@ class EmployersListItem extends Component {
         const {name, salary} = this.props
         let {increase, rise} = this.state
 
-        let classNames = "list-group-item d-flex justify-content-between like";
+        let classNames = "list-group-item d-flex justify-content-between";
         if(increase) {
             classNames += " increase";
         }
         if (rise) {
-            classNames += " like"
+            classNames += " like";
         }
     return (
        <li className={classNames}>
@@ -48,7 +48,7 @@ class EmployersListItem extends Component {
                     className="btn-trash btn-sm">
                     <i className="fas fa-trash"></i>
                 </button>
-                <i className="fas fa-start"></i>
+                <i className="fas fa-star"></i>
             </div>
        </li>
     )
